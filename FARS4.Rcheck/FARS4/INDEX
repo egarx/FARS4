@@ -1,0 +1,5 @@
+fars_map_state          FUN #5 Display accidents map by state and year
+fars_read               R e v i e w FARS data
+fars_read_years         FUN #3 Read FARS years
+fars_summarize_years    #'FUN #4 Summarize FARS data by years.
+make_filename           FUN #2 Make data file name
