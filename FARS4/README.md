@@ -1,25 +1,23 @@
-
 # FARS4
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/egarx/FARS4.svg?branch=master)](https://travis-ci.com/egarx/FARS4)
+[![R-CMD-check](https://github.com/egarx/FARS3/workflows/R-CMD-check/badge.svg)](https://github.com/egarx/FARS4/actions)
 <!-- badges: end -->
 
-The goal of FARS4 is to ...
+The functions programmed using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
 
-## Installation
+## Steps to run the functions:
 
-You can install the released version of FARS4 from [CRAN](https://CRAN.R-project.org) with:
+1. Libraries used in this project
+2. This function reads data from .csv file
+3. Make data file name
+4. Read FARS years
+5. Summarize FARS data by years.
+6. Display accidents map by state and year.
 
-``` r
-install.packages("FARS4")
-```
+## Examples
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(FARS4)
-## basic example code
-```
-
+1. fars_summarize_years(2015)
+2. fars_summarize_years(c(2015, 2014))
+3. fars_map_state(49, 2015) # selecting any state, in this case it selected # 49
