@@ -14,4 +14,4 @@ Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2021-02-25 01:07:52 UTC; emili
+Packaged: 2021-02-25 01:53:51 UTC; emili

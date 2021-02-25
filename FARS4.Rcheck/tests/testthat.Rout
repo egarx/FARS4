@@ -74,4 +74,4 @@ The following objects are masked from 'package:testthat':
 > 
 > proc.time()
    user  system elapsed 
-   1.06    0.15    1.20 
+   0.95    0.25    1.20 
