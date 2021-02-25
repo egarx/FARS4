@@ -1,0 +1,77 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(testthat)
+Warning message:
+package 'testthat' was built under R version 4.0.4 
+> library(FARS4)
+> library(dplyr)
+
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:testthat':
+
+    matches
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+> library(readr)
+> library(tidyr)
+
+Attaching package: 'tidyr'
+
+The following object is masked from 'package:testthat':
+
+    matches
+
+> library(magrittr)
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+The following objects are masked from 'package:testthat':
+
+    equals, is_less_than, not
+
+> library(graphics)
+> library(maps)
+> 
+> # test make_filename
+> test_that("Testing the make_filename function", {
++   expect_equal(make_filename(2013), "accident_2013.csv.bz2")})
+[32mTest passed[39m 
+> 
+> test_that("Testing the make_filename function", {
++   expect_equal(make_filename(2014), "accident_2014.csv.bz2")})
+[32mTest passed[39m 
+> 
+> test_that("Testing the make_filename function", {
++   expect_equal(make_filename(2015), "accident_2015.csv.bz2")})
+[32mTest passed[39m 
+> 
+> proc.time()
+   user  system elapsed 
+   1.06    0.15    1.20 
