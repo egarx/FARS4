@@ -1,0 +1,24 @@
+Package: FARS4
+Type: Package
+Title: FARS4
+Version: 0.1.0
+Author: EMILIO GARCIA
+Maintainer: EMILIO GARCIA <eg@newtonspark.com>
+Description: This package has 5 functions:Visualize the output (fars_map_state), Data summarization (fars_summarize_years), Load the dataset (fars_read), Load the dataset (fars_read_years), Generate the filename properly (make_filename).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports:
+    dplyr,
+    magrittr,
+    maps,
+    readr,
+    tidyr,
+    rlang,
+    testthat
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
